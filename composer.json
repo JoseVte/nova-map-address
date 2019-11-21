@@ -1,0 +1,34 @@
+{
+    "name": "josrom/nova-map-address",
+    "description": "A Laravel Nova field to place a marker on map to get coordinates then it reverse geocoding the coordinates to get a street address",
+    "keywords": [
+        "laravel",
+        "nova",
+        "geocoding",
+        "address",
+        "geo",
+        "map"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1.0",
+        "illuminate/support": "^5.7|^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Josrom\\MapAddress\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Josrom\\MapAddress\\FieldServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
